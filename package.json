@@ -1,0 +1,22 @@
+{
+  "name": "notdasolbot",
+  "version": "1.0.0",
+  "description": "Twitch Community Bot For @SolaarNoble",
+  "main": "index.js",
+  "scripts": {
+    "test": "app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oliver-Harris/notdasolbot.git"
+  },
+  "author": "Oliver M. Harris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oliver-Harris/notdasolbot/issues"
+  },
+  "homepage": "https://github.com/Oliver-Harris/notdasolbot#readme",
+  "dependencies": {
+    "tmi.js": "^1.2.1"
+  }
+}
