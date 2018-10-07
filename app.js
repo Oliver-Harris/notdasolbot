@@ -1,5 +1,6 @@
 const fs = require('fs');
 const tmi = require('tmi.js');
+const command = require('./data/commands');
 
 let data = {
 	hidden: {}
@@ -44,9 +45,9 @@ client.on('chat', function(channel, user, message, self) {
 	if (self) {
 		return;
 	}
-	for (let i = 0; i < hidden.commands.length; i++) {
-		if (message == (hidden.commands[i])) {
-			client.say(channel, hidden.message[i]);
+	for (let i = 0; i < command.length; i++) {
+		if (message == (command[i].trigger)) {
+			client.say(channel, command[i].response);
 		};
 	};
 });
